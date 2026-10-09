@@ -1,0 +1,3 @@
+variable,year,n_days,n_valid,calendar_days,total_mm,rainy_days_ge_2.5mm,max_daily_mm
+rainfall,2019,365,363,365,,,7.821
+rainfall,2020,366,366,366,688.449,110.000,7.594

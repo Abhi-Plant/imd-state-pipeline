@@ -1,0 +1,57 @@
+# IMD state extraction pipeline configuration.
+# Relative paths are resolved against the project root (the folder containing config/).
+# These are example settings, not a claim that every year/variable is downloadable.
+
+state: Madhya Pradesh
+districts: []          # e.g. [Chhindwara, Betul]   (needs a district field in the boundary file)
+subdistricts: []       # taluk/tehsil/block/village names (needs that field in the boundary file)
+start_date: "2001-01-01"
+end_date: "2024-12-31"
+variables:
+  - rainfall
+  # - tmax
+  # - tmin
+
+source: IMD
+# Optional per-variable dataset override (see `python main.py --list-sources`):
+# datasets:
+#   rainfall: IMD_RF025_NC      # NetCDF distribution (endpoint unverified; prefer manual import)
+
+output_dir: "./data"
+output_format:
+  - NetCDF
+  - GeoTIFF
+  - CSV
+  # - GeoPackage
+
+# You must supply the boundary. The pipeline does not ship or invent administrative boundaries.
+# Suitable sources: Survey of India (onlinemaps.surveyofindia.gov.in), Census of India / LGD-based
+# layers, or open datasets such as DataMeet (github.com/datameet/maps) or geoBoundaries. Record which
+# one you used in source_note.
+boundary_source:
+  path: "./boundaries/india_states.geojson"
+  layer: null
+  state_field: null        # auto-detected from ST_NM, STATE, NAME_1, shapeName, ...
+  district_field: null     # auto-detected from DISTRICT, dtname, NAME_2, ...
+  subdistrict_field: null  # auto-detected from sdtname, TEHSIL, TALUK, BLOCK, NAME_3, ...
+  source_note: ""
+
+# auto     = use raw files already present, import from manual_import_dir, then download what is missing
+# download = only download
+# manual   = never touch the network; use raw/ and manual_import_dir only
+acquisition_mode: auto
+manual_import_dir: "./data/manual_downloads"
+
+resume_download: true      # false = re-fetch every year; differing upstream files are kept beside, never overwrite
+validate_data: true
+
+cell_selection: centre     # centre | intersect  (see README "Spatial extraction")
+mean_min_valid_fraction: 1.0   # temperature means need this fraction of valid days (rain totals always need 100%)
+timeout_seconds: 120
+max_retries: 3
+
+# Optional: compare annual regional rainfall with an external reference (CSV with columns year,value).
+# Reported separately and never used to modify IMD values.
+# reference_comparison:
+#   file: "./reference/state_annual_rainfall.csv"
+#   label: "IMD Rainfall Statistics of India (state annual totals)"

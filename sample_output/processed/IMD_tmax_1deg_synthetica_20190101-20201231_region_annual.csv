@@ -1,0 +1,3 @@
+variable,year,n_days,n_valid,calendar_days,mean_degC,min_degC,max_degC
+tmax,2019,365,365,365,31.983,23.790,40.009
+tmax,2020,366,366,366,32.024,24.116,39.727

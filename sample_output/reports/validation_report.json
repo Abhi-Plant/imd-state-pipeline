@@ -1,0 +1,356 @@
+{
+  "config_fingerprint": "a631d7cd10a88e6f",
+  "generated_utc": "2026-10-09T08:49:58+00:00",
+  "all_passed": true,
+  "n_checks": 33,
+  "checks": [
+    {
+      "check": "selected cells cover region extent",
+      "passed": true,
+      "detail": {
+        "region_bounds": [
+          76.1,
+          21.0,
+          79.3,
+          23.7
+        ],
+        "selected_cell_edge_bounds": [
+          76.125,
+          21.125,
+          79.375,
+          23.625
+        ],
+        "tolerance_deg": 0.125001
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "every selected cell overlaps region",
+      "passed": true,
+      "detail": {
+        "cells_without_overlap": 0
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "native resolution preserved",
+      "passed": true,
+      "detail": {
+        "resolution_deg": 0.25,
+        "resampled": false
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "no duplicate dates",
+      "passed": true,
+      "detail": {
+        "duplicates": 0
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "strictly daily steps",
+      "passed": true,
+      "detail": {},
+      "variable": "rainfall"
+    },
+    {
+      "check": "output covers requested range",
+      "passed": true,
+      "detail": {
+        "requested": [
+          "2019-01-01",
+          "2020-12-31"
+        ],
+        "available": [
+          "2019-01-01",
+          "2020-12-31"
+        ],
+        "missing_days": 0,
+        "missing_ranges": []
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "NetCDF reload identical (IMD_rainfall_0p25deg_synthetica_20190101-20201231.nc)",
+      "passed": true,
+      "detail": {
+        "values_equal": true,
+        "coords_equal": true
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "NetCDF units preserved (IMD_rainfall_0p25deg_synthetica_20190101-20201231.nc)",
+      "passed": true,
+      "detail": {
+        "units": "mm"
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "GeoTIFF reload (IMD_rainfall_0p25deg_synthetica_20190101-20201231_2019.tif)",
+      "passed": true,
+      "detail": {
+        "crs_epsg4326": true,
+        "bands": 365,
+        "values_equal": true,
+        "first_band_date": "2019-01-01"
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "GeoTIFF reload (IMD_rainfall_0p25deg_synthetica_20190101-20201231_2020.tif)",
+      "passed": true,
+      "detail": {
+        "crs_epsg4326": true,
+        "bands": 366,
+        "values_equal": true,
+        "first_band_date": "2020-01-01"
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "CSV row count (IMD_rainfall_0p25deg_synthetica_20190101-20201231_cells_daily.csv)",
+      "passed": true,
+      "detail": {
+        "rows": 81141,
+        "expected": 81141
+      },
+      "variable": "rainfall"
+    },
+    {
+      "check": "selected cells cover region extent",
+      "passed": true,
+      "detail": {
+        "region_bounds": [
+          76.1,
+          21.0,
+          79.3,
+          23.7
+        ],
+        "selected_cell_edge_bounds": [
+          76.0,
+          21.0,
+          79.0,
+          24.0
+        ],
+        "tolerance_deg": 0.500001
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "every selected cell overlaps region",
+      "passed": true,
+      "detail": {
+        "cells_without_overlap": 0
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "native resolution preserved",
+      "passed": true,
+      "detail": {
+        "resolution_deg": 1.0,
+        "resampled": false
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "no duplicate dates",
+      "passed": true,
+      "detail": {
+        "duplicates": 0
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "strictly daily steps",
+      "passed": true,
+      "detail": {},
+      "variable": "tmax"
+    },
+    {
+      "check": "output covers requested range",
+      "passed": true,
+      "detail": {
+        "requested": [
+          "2019-01-01",
+          "2020-12-31"
+        ],
+        "available": [
+          "2019-01-01",
+          "2020-12-31"
+        ],
+        "missing_days": 0,
+        "missing_ranges": []
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "NetCDF reload identical (IMD_tmax_1deg_synthetica_20190101-20201231.nc)",
+      "passed": true,
+      "detail": {
+        "values_equal": true,
+        "coords_equal": true
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "NetCDF units preserved (IMD_tmax_1deg_synthetica_20190101-20201231.nc)",
+      "passed": true,
+      "detail": {
+        "units": "degC"
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "GeoTIFF reload (IMD_tmax_1deg_synthetica_20190101-20201231_2019.tif)",
+      "passed": true,
+      "detail": {
+        "crs_epsg4326": true,
+        "bands": 365,
+        "values_equal": true,
+        "first_band_date": "2019-01-01"
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "GeoTIFF reload (IMD_tmax_1deg_synthetica_20190101-20201231_2020.tif)",
+      "passed": true,
+      "detail": {
+        "crs_epsg4326": true,
+        "bands": 366,
+        "values_equal": true,
+        "first_band_date": "2020-01-01"
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "CSV row count (IMD_tmax_1deg_synthetica_20190101-20201231_cells_daily.csv)",
+      "passed": true,
+      "detail": {
+        "rows": 5848,
+        "expected": 5848
+      },
+      "variable": "tmax"
+    },
+    {
+      "check": "selected cells cover region extent",
+      "passed": true,
+      "detail": {
+        "region_bounds": [
+          76.1,
+          21.0,
+          79.3,
+          23.7
+        ],
+        "selected_cell_edge_bounds": [
+          76.0,
+          21.0,
+          79.0,
+          24.0
+        ],
+        "tolerance_deg": 0.500001
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "every selected cell overlaps region",
+      "passed": true,
+      "detail": {
+        "cells_without_overlap": 0
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "native resolution preserved",
+      "passed": true,
+      "detail": {
+        "resolution_deg": 1.0,
+        "resampled": false
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "no duplicate dates",
+      "passed": true,
+      "detail": {
+        "duplicates": 0
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "strictly daily steps",
+      "passed": true,
+      "detail": {},
+      "variable": "tmin"
+    },
+    {
+      "check": "output covers requested range",
+      "passed": true,
+      "detail": {
+        "requested": [
+          "2019-01-01",
+          "2020-12-31"
+        ],
+        "available": [
+          "2019-01-01",
+          "2020-12-31"
+        ],
+        "missing_days": 0,
+        "missing_ranges": []
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "NetCDF reload identical (IMD_tmin_1deg_synthetica_20190101-20201231.nc)",
+      "passed": true,
+      "detail": {
+        "values_equal": true,
+        "coords_equal": true
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "NetCDF units preserved (IMD_tmin_1deg_synthetica_20190101-20201231.nc)",
+      "passed": true,
+      "detail": {
+        "units": "degC"
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "GeoTIFF reload (IMD_tmin_1deg_synthetica_20190101-20201231_2019.tif)",
+      "passed": true,
+      "detail": {
+        "crs_epsg4326": true,
+        "bands": 365,
+        "values_equal": true,
+        "first_band_date": "2019-01-01"
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "GeoTIFF reload (IMD_tmin_1deg_synthetica_20190101-20201231_2020.tif)",
+      "passed": true,
+      "detail": {
+        "crs_epsg4326": true,
+        "bands": 366,
+        "values_equal": true,
+        "first_band_date": "2020-01-01"
+      },
+      "variable": "tmin"
+    },
+    {
+      "check": "CSV row count (IMD_tmin_1deg_synthetica_20190101-20201231_cells_daily.csv)",
+      "passed": true,
+      "detail": {
+        "rows": 5848,
+        "expected": 5848
+      },
+      "variable": "tmin"
+    }
+  ]
+}

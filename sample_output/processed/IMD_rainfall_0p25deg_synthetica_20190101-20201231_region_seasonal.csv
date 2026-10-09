@@ -1,0 +1,9 @@
+variable,year,season,n_days,n_valid,calendar_days,total_mm,rainy_days_ge_2.5mm,max_daily_mm
+rainfall,2019,Monsoon (JJAS),122,120,122,,,7.821
+rainfall,2019,Post-monsoon (OND),92,92,92,44.880,0.000,1.269
+rainfall,2019,Pre-monsoon (MAM),92,92,92,39.137,0.000,1.313
+rainfall,2019,Winter (JF),59,59,59,96.363,18.000,4.893
+rainfall,2020,Monsoon (JJAS),122,122,122,500.154,92.000,7.594
+rainfall,2020,Post-monsoon (OND),92,92,92,43.205,0.000,1.536
+rainfall,2020,Pre-monsoon (MAM),92,92,92,45.250,0.000,1.234
+rainfall,2020,Winter (JF),60,60,60,99.840,18.000,6.233

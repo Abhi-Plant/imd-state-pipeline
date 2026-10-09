@@ -1,0 +1,9 @@
+variable,year,season,n_days,n_valid,calendar_days,mean_degC,min_degC,max_degC
+tmax,2019,Monsoon (JJAS),122,122,122,34.987,28.386,40.009
+tmax,2019,Post-monsoon (OND),92,92,92,25.857,23.790,29.130
+tmax,2019,Pre-monsoon (MAM),92,92,92,36.332,31.033,39.832
+tmax,2019,Winter (JF),59,59,59,28.546,25.029,32.045
+tmax,2020,Monsoon (JJAS),122,122,122,34.901,28.226,39.727
+tmax,2020,Post-monsoon (OND),92,92,92,25.981,24.116,28.998
+tmax,2020,Pre-monsoon (MAM),92,92,92,36.420,31.555,39.691
+tmax,2020,Winter (JF),60,60,60,28.702,25.322,32.969
