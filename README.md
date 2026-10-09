@@ -198,3 +198,9 @@ A full-state, multi-decade daily CSV is large: Madhya Pradesh (about 308,000 kmÂ
 2. If it introduces a new variable name, add aliases to `VARIABLE_ALIASES` and `DEFAULT_DATASET`, plausible limits to `PLAUSIBLE` in [src/quality_control.py](src/quality_control.py), and CF `standard_name`/`cell_methods` in [src/export.py](src/export.py).
 3. If the format is new, add a reader in [src/inspect_data.py](src/inspect_data.py) that returns `(time, lat, lon)` with missing values as NaN, plus a content check in [src/raw_store.py](src/raw_store.py).
 4. Add synthetic files to [src/synthetic.py](src/synthetic.py) and a test.
+
+## Licence
+
+The source code is released under the [MIT License](LICENSE).
+
+The licence covers this software only. **IMD gridded data are not included and are not covered by it.** Data you download or import remain subject to India Meteorological Department's terms of use; acknowledge IMD and cite the dataset papers listed in [docs/SOURCE_REPORT.md](docs/SOURCE_REPORT.md). Administrative boundary files you supply remain under their own licences. The files in `sample_output/` are generated from synthetic data for a fictional region and contain no IMD data.
